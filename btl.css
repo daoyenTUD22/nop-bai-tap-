@@ -1,0 +1,438 @@
+@font-face {
+    font-family: Tan;
+    src: url(OpenType-PS/DFVN\ Indulge\ Script.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+    scroll-behavior: smooth;
+    color: #f50909;
+    font-family: "Times New Roman ", Times, serif;
+}
+img:hover{
+    transform: scale(1.2);
+}
+h1, h2, a div, a{
+    font-family: "Times New Roman ", Times, serif;
+}
+.bar{
+    height: 40px;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.barr{
+    height: 40px;
+    width: 120px;
+    position: relative;
+}
+.bar1, .bar2{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+.bar2{
+    transform: translateY(-100%);
+    background-color: #ff65a0;
+    color: #aaff78;
+}
+.bar1{
+    color: #fa0000;
+}
+.barr:hover{
+    transform: translateY(100%);
+}
+.navbarrr{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+.topnav {
+    display: none;
+    overflow: hidden;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    background-color: #ffacff;
+    position: relative;
+}
+.sidebar {
+    height: 270px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #79c3f5;
+    overflow-x: hidden;
+    padding-top: 70px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+
+}
+.sidebar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF6E9;
+    display: block;
+    transition: 0.3s;
+}
+ 
+.sidebar .closebtn {
+    position: absolute;
+    top: 12px;
+    right: 28px;
+    font-size: 36px;
+}
+
+#navbar {
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+            -6px -6px 10px -1px rgba(255,255,255,0.7);
+    background-color: #fcc5da;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    padding: 10px calc((100% - 1000px)/2);
+} 
+#navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 24px;
+    color: #fd3232;
+}
+#navbar #logo {
+    height: 70px;
+}
+#navbar a.nav:hover {
+    transform: scale(1.2);
+}
+#navbar-right {
+    float: right;
+    padding: 12px 0;
+    display: flex;
+}
+#home{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffdaf4;
+}
+.home__content{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 120px calc((90% - 990px)/2)
+}
+.home__content__text{
+    display: flex;
+    align-items: center;
+}.home__content__text h1{
+    font-size: 50px;
+}
+.home__content__image{
+    height: 500px;
+    width: 700px;
+    background-color: #ffffff;
+    border-radius: 200px 200px 100px 100px;
+    position: relative;
+    overflow: hidden;
+}
+#about 
+.about {
+    padding-top:5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: fit-content;
+    background-color: #ffecf9;
+}
+.about-img {
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: none;
+    width: 100vw
+    margin-top: rem;
+    margin-bottom: 0rem;
+  height: auto;
+}
+.about-img img {
+    position: relative;
+    width: 25vw;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.about-content {
+    margin: 3rem 5rem;
+}
+.about-content h2 {
+    text-align: left;
+    line-height: 2.5;
+}
+.heading {
+    font-size: 5rem;
+}
+#word
+h1{}
+.title {
+    text-align: center;
+    font-size: vmin;
+    color:#fcc5da;
+
+}
+.title h1{
+    padding-top: 5%;
+    font-size: 3em;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+.card-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+    gap: 10px;
+}
+.card {
+    width: 30rem;
+    background-color: #ffd4ee;
+    border-radius:10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: 0.6s cubic-bezier(0.25, 0.1, 0.04, 0.79);
+    margin-bottom: 50px;
+}
+
+.card-content {
+  
+    padding:2px;
+    text-align: center;
+   
+}
+.card-content h1 {
+    font-size: 1.2rem ;
+    margin-bottom: 20px;
+}
+.card-content a {
+    font-size: 1rem;
+    
+}
+.card-button {
+    display: inline block;
+    background-color: #ffa0c3;
+    color: black;
+    text-decoration: none;
+ border-radius: 50px;
+    padding: 1px 1px;
+}
+.card:hover {
+    background-color: rgb(255 168 202);
+    transform: scale(1.1);
+
+  }
+  #service
+h2{
+    font-size: 3rem;.
+ }
+.educations {
+    background-color: #ffe1f9;
+    padding-bottom: 6rem;
+    text-align: center ;
+   
+  }
+  
+  .educations-container {
+    display: grid;
+    row-gap: 2rem;
+  }
+  
+  .educations-data{
+    display: grid;
+    padding: 2rem 2rem;
+    border-radius: 10rem; 
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0px 5px 5px rgb(0 0 0);
+    background: #ffb8ee;
+    width: 100%;
+  }
+  #testimonials
+ 
+  .testimonials__wrapper {
+    width: 100%;
+    background-color: #fff7fe;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7rem;
+    padding-top: 5rem;
+}
+
+.testimonials__wrapper h5 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.testimonials__cards {
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+}
+
+.testimonials__card {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 20px 30px;
+    position: relative;
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 20px 25px rgb(0, 0, 0, 0.2);
+    margin-right: 5rem;
+}
+
+.testimonials__card img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.testimonials__card p {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.testimonials__card h4 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.testimonials__card i {
+    font-size: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    color: #ffcfcf;
+}
+
+.testimonials__card:hover {
+    transform: scale(1.4);
+    color: #fff6f6;
+    background: #fff;
+    z-index: 10000;
+}
+  }
+#Contact
+
+.contact {
+    padding-top: 3em;
+     
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact .action {
+    max-width: 100rem;
+    margin: rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact .action .input-box input,
+.contact .action textarea {
+    width: 40%;
+    padding: 1.8rem;
+    font-size: 1.5rem;
+    color: #ffb4b4;
+    background: rgb(255 222 237);
+    border-radius:9rem;
+    border: 2px solid #000000;
+    margin: 7rem rem;
+    resize: none;
+}
+
+.contact .action .btn {
+    margin-top: 4rem;
+}
+div input{
+    padding: 10px;
+    margin: 20px 0;
+    width: 360px;
+}
+label{
+    position: absolute;
+}
+    .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: rgb(92, 255, 92);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: rgb(4, 135, 250);
+    border: 2px solid #073f70;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3 ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: #ffb2ee;
+    color: #ffbaf4;
+}
+.footer .name {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255 0 0);
+}
